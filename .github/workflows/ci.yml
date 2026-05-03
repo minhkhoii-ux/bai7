@@ -27,7 +27,7 @@ jobs:
         uses: dbelyaev/action-checkstyle@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          level: warning # Hoặc 'error' tùy mức độ nghiêm ngặt
+          level: error # Hoặc 'error' tùy mức độ nghiêm ngặt
           reporter: github-pr-review # Đăng comment trực tiếp vào PR review
 
       # Bước chạy Unit Test để đảm bảo logic không bị lỗi
